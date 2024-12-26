@@ -18,10 +18,14 @@ namespace TEngine
         private GameObject _panel;
 
         private Canvas _canvas;
+        
+        protected Canvas Canvas => _canvas;
 
         private Canvas[] _childCanvas;
 
         private GraphicRaycaster _raycaster;
+        
+        protected GraphicRaycaster GraphicRaycaster => _raycaster;
 
         private GraphicRaycaster[] _childRaycaster;
 
@@ -73,29 +77,6 @@ namespace TEngine
         public int HideTimeToClose { get; set; }
         
         public int HideTimerId { get; set; }
-
-        /// <summary>
-        /// 自定义数据。
-        /// </summary>
-        public System.Object UserData
-        {
-            get
-            {
-                if (userDatas != null && userDatas.Length >= 1)
-                {
-                    return userDatas[0];
-                }
-                else
-                {
-                    return null;
-                }
-            }
-        }
-
-        /// <summary>
-        /// 自定义数据集。
-        /// </summary>
-        public System.Object[] UserDatas => userDatas;
 
         /// <summary>
         /// 窗口深度值。
@@ -227,6 +208,11 @@ namespace TEngine
         internal bool IsLoadDone = false;
 
         internal bool IsDestroyed = false;
+        
+        /// <summary>
+        /// UI是否隐藏标志位。
+        /// </summary>
+        public bool IsHide { internal set; get; } = false;
         #endregion
 
         public void Init(string name, int layer, bool fullScreen, string assetName, bool fromResources, int hideTimeToClose)
@@ -241,6 +227,7 @@ namespace TEngine
 
         internal void TryInvoke(System.Action<UIWindow> prepareCallback, System.Object[] userDatas)
         {
+            CancelHideToCloseTimer();
             base.userDatas = userDatas;
             if (IsPrepare)
             {
@@ -250,7 +237,6 @@ namespace TEngine
             {
                 _prepareCallback = prepareCallback;
             }
-            CancelHideToCloseTimer();
         }
 
         internal async UniTaskVoid InternalLoad(string location, Action<UIWindow> prepareCallback, bool isAsync, System.Object[] userDatas)
@@ -447,6 +433,11 @@ namespace TEngine
             IsPrepare = true;
             _prepareCallback?.Invoke(this);
         }
+        
+        protected virtual void Hide()
+        {
+            GameModule.UI.HideUI(this.GetType());
+        }
 
         protected virtual void Close()
         {
@@ -455,6 +446,7 @@ namespace TEngine
 
         internal void CancelHideToCloseTimer()
         {
+            IsHide = false;
             if (HideTimerId > 0)
             {
                 GameModule.Timer.RemoveTimer(HideTimerId);
