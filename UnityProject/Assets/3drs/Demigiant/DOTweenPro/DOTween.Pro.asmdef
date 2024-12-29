@@ -1,0 +1,16 @@
+{
+    "name": "DOTween.Pro",
+    "rootNamespace": "",
+    "references": [
+        "GUID:79942950428834f20a7a2100af95f972"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

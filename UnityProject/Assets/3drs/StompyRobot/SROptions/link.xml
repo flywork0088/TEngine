@@ -1,0 +1,5 @@
+<linker>
+  <assembly fullname="SROptions">
+    <type fullname="SROptions" preserve="all"/>
+  </assembly>
+</linker>
