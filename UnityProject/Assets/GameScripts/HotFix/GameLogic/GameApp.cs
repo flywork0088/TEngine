@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 using GameBase;
+using GameLogic;
 using TEngine;
 
 /// <summary>
@@ -37,7 +38,8 @@ public partial class GameApp:Singleton<GameApp>
     /// </summary>
     private void StartGameLogic()
     {
-        
+        // 显示战斗界面
+        GameModule.UI.ShowUIAsync<UIMainWindow>();
     }
 
     /// <summary>

@@ -281,9 +281,8 @@ GameObject:
   - component: {fileID: 3889237056280057907}
   - component: {fileID: 504433670811083291}
   - component: {fileID: 9063286031669035114}
-  - component: {fileID: 2272070938719884218}
   m_Layer: 5
-  m_Name: UIConfirmRestartView
+  m_Name: UIConfirmRestartWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -348,24 +347,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2272070938719884218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980011412467000977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92d5092ff2144bdcbe789598c846d4ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btnConfirm: {fileID: 4156897913482527442}
-  btnCancel: {fileID: 8608117213029530000}
-  btnClose: {fileID: 851120700679835548}
-  imgRestartIcon: {fileID: 2017733993880473278}
-  txtTitle: {fileID: 5179517802345538310}
-  txtContent: {fileID: 5492264380866736117}
 --- !u!1 &1586879574550955337
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,7 +590,6 @@ GameObject:
   - component: {fileID: 6099908717280538437}
   - component: {fileID: 5965811749968580883}
   - component: {fileID: 5179517802345538310}
-  - component: {fileID: 3407553682876893692}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -707,15 +687,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -733,19 +715,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &3407553682876893692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6284751143507272640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 531497c1efdd4861ae5224d4991cff3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textKey: Common_Restart_Title
 --- !u!1 &7783866496857721503
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,7 +726,6 @@ GameObject:
   - component: {fileID: 3895953847149014002}
   - component: {fileID: 5130899139389339738}
   - component: {fileID: 5492264380866736117}
-  - component: {fileID: 3570228862670509262}
   m_Layer: 5
   m_Name: Context
   m_TagString: Untagged
@@ -855,15 +823,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -881,19 +851,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &3570228862670509262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7783866496857721503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 531497c1efdd4861ae5224d4991cff3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textKey: Common_Restart_Details
 --- !u!1001 &5276118322739372617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1013,10 +970,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2022563623502929972, guid: f5a924f1c4f13a9478c6b1aa4c951f81, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4514480210870689333}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5a924f1c4f13a9478c6b1aa4c951f81, type: 3}
 --- !u!114 &5014461952658482090 stripped
 MonoBehaviour:
@@ -1029,40 +983,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &6136470392930009725 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2022563623502929972, guid: f5a924f1c4f13a9478c6b1aa4c951f81, type: 3}
-  m_PrefabInstance: {fileID: 5276118322739372617}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4514480210870689333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6136470392930009725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 531497c1efdd4861ae5224d4991cff3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textKey: 
 --- !u!224 &6583013956019442955 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1324931275235342146, guid: f5a924f1c4f13a9478c6b1aa4c951f81, type: 3}
   m_PrefabInstance: {fileID: 5276118322739372617}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8608117213029530000 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4489707668533124057, guid: f5a924f1c4f13a9478c6b1aa4c951f81, type: 3}
-  m_PrefabInstance: {fileID: 5276118322739372617}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 517a1aede9a746b390a18a668ab3248e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &6241564951626091475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1185,47 +1110,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1442620398079048952, guid: ecdf571133a09564d890988e43e979e8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 538518696674646155}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3509932395056481729, guid: ecdf571133a09564d890988e43e979e8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7704865357697019691}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecdf571133a09564d890988e43e979e8, type: 3}
 --- !u!224 &6513959385828806 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6235614288048129557, guid: ecdf571133a09564d890988e43e979e8, type: 3}
   m_PrefabInstance: {fileID: 6241564951626091475}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4156897913482527442 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8011405528746150145, guid: ecdf571133a09564d890988e43e979e8, type: 3}
-  m_PrefabInstance: {fileID: 6241564951626091475}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6810c05f69845d6859e61d79e3a18d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &4799511031984977707 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1442620398079048952, guid: ecdf571133a09564d890988e43e979e8, type: 3}
   m_PrefabInstance: {fileID: 6241564951626091475}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7362178864120450578 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3509932395056481729, guid: ecdf571133a09564d890988e43e979e8, type: 3}
-  m_PrefabInstance: {fileID: 6241564951626091475}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7704865357697019691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7362178864120450578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 531497c1efdd4861ae5224d4991cff3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textKey: Common_btn_Restart

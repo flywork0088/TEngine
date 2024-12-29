@@ -30,27 +30,19 @@ MonoBehaviour:
     referenceMode: 2
     serializationDepthLimit: 64
     assemblyNames:
-    - Aot
     - Assembly-CSharp
-    - Coffee.UIParticle
-    - CW.Common
+    - Assembly-CSharp-firstpass
     - DOTween.Module
     - DOTween.Pro
     - EasySave3
-    - HsHall
-    - HsLudo
+    - GameBase
+    - GameLogic
+    - GameProto
     - HybridCLR.Runtime
-    - LeanCommon
-    - LeanCommonPlus
-    - LeanTouch
-    - LeanTouchPlus
-    - Poco
-    - spine-csharp
-    - spine-unity
     - SROptions
     - StompyRobot.SRDebugger
     - StompyRobot.SRF
-    - SuperScrollView
+    - TEngine.Runtime
     - UniTask
     - UniTask.Addressables
     - UniTask.DOTween
