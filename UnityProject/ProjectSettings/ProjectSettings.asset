@@ -764,21 +764,23 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   scriptingDefineSymbols:
-    Android: ENABLE_LOG;ODIN_VALIDATOR;ODIN_VALIDATOR_3_1;ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;TextMeshPro
-    EmbeddedLinux: TextMeshPro
-    GameCoreXboxOne: TextMeshPro
-    Nintendo Switch: TextMeshPro
-    PS4: TextMeshPro
-    PS5: TextMeshPro
-    QNX: TextMeshPro
-    ReservedCFE: TextMeshPro
-    Standalone: ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;ODIN_VALIDATOR;ODIN_VALIDATOR_3_1;ENABLE_LOG;TextMeshPro
-    VisionOS: TextMeshPro
-    WebGL: ENABLE_LOG;TextMeshPro
-    Windows Store Apps: ENABLE_LOG
-    XboxOne: TextMeshPro
-    iPhone: ENABLE_LOG;TextMeshPro
-    tvOS: TextMeshPro
+    Android: ENABLE_LOG;ODIN_VALIDATOR;ODIN_VALIDATOR_3_1;ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;TextMeshPro;DOTWEEN
+    EmbeddedLinux: TextMeshPro;DOTWEEN
+    GameCoreScarlett: DOTWEEN
+    GameCoreXboxOne: TextMeshPro;DOTWEEN
+    LinuxHeadlessSimulation: DOTWEEN
+    Nintendo Switch: TextMeshPro;DOTWEEN
+    PS4: TextMeshPro;DOTWEEN
+    PS5: TextMeshPro;DOTWEEN
+    QNX: TextMeshPro;DOTWEEN
+    ReservedCFE: TextMeshPro;DOTWEEN
+    Standalone: ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;ODIN_VALIDATOR;ODIN_VALIDATOR_3_1;ENABLE_LOG;TextMeshPro;DOTWEEN
+    VisionOS: TextMeshPro;DOTWEEN
+    WebGL: ENABLE_LOG;TextMeshPro;DOTWEEN
+    Windows Store Apps: ENABLE_LOG;DOTWEEN
+    XboxOne: TextMeshPro;DOTWEEN
+    iPhone: ENABLE_LOG;TextMeshPro;DOTWEEN
+    tvOS: TextMeshPro;DOTWEEN
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

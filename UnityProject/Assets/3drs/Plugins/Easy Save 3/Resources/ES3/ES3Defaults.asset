@@ -42,6 +42,7 @@ MonoBehaviour:
     - SROptions
     - StompyRobot.SRDebugger
     - StompyRobot.SRF
+    - SuperScrollView
     - TEngine.Runtime
     - UniTask
     - UniTask.Addressables
