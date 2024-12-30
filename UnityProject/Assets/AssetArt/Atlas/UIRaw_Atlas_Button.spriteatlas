@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UIRaw_Atlas_Button
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 0
+      compressionQuality: 0
+      maxTextureSize: 0
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 4
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 49
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 4
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 4
+      m_BuildTarget: WebGL
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 21300000, guid: 2e4470b3a9ebb274ca7d693206ec41a6, type: 3}
+    - {fileID: 21300000, guid: 2c4b5c210473f1b4180a2891869ef7dc, type: 3}
+    - {fileID: 21300000, guid: 5884aadcfe128b7469f9e9fa8f235917, type: 3}
+    - {fileID: 21300000, guid: 55ec51c1106ad364d9576d22fc0272f7, type: 3}
+    - {fileID: 21300000, guid: 0ddb591346f5a3f478ee1ae917c62b15, type: 3}
+    - {fileID: 21300000, guid: 741f8144a7da4224e973549b8a31fb42, type: 3}
+    - {fileID: 21300000, guid: 7331510f3b99b7248b57f08c5d1faec4, type: 3}
+    - {fileID: 21300000, guid: f720f0b62db1bdb42a8f6e2b41d3e39f, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 2c4b5c210473f1b4180a2891869ef7dc: 21300000
+    - 55ec51c1106ad364d9576d22fc0272f7: 21300000
+    - 0ddb591346f5a3f478ee1ae917c62b15: 21300000
+    - 2e4470b3a9ebb274ca7d693206ec41a6: 21300000
+    - 741f8144a7da4224e973549b8a31fb42: 21300000
+    - f720f0b62db1bdb42a8f6e2b41d3e39f: 21300000
+    - 5884aadcfe128b7469f9e9fa8f235917: 21300000
+    - 7331510f3b99b7248b57f08c5d1faec4: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 2c4b5c210473f1b4180a2891869ef7dc, type: 3}
+  - {fileID: 21300000, guid: 55ec51c1106ad364d9576d22fc0272f7, type: 3}
+  - {fileID: 21300000, guid: 0ddb591346f5a3f478ee1ae917c62b15, type: 3}
+  - {fileID: 21300000, guid: 2e4470b3a9ebb274ca7d693206ec41a6, type: 3}
+  - {fileID: 21300000, guid: 741f8144a7da4224e973549b8a31fb42, type: 3}
+  - {fileID: 21300000, guid: f720f0b62db1bdb42a8f6e2b41d3e39f, type: 3}
+  - {fileID: 21300000, guid: 5884aadcfe128b7469f9e9fa8f235917, type: 3}
+  - {fileID: 21300000, guid: 7331510f3b99b7248b57f08c5d1faec4, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - bar_round9
+  - btn_round11
+  - btn_round12
+  - bar_round10
+  - button_square
+  - prop_round8
+  - btn_round10
+  - prop_round7
+  m_RenderDataMap: {}
+  m_Tag: UIRaw_Atlas_Button
+  m_IsVariant: 0
