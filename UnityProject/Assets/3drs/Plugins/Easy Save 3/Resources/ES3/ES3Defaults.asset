@@ -31,7 +31,6 @@ MonoBehaviour:
     serializationDepthLimit: 64
     assemblyNames:
     - Assembly-CSharp
-    - Assembly-CSharp-firstpass
     - DOTween.Module
     - DOTween.Pro
     - EasySave3
